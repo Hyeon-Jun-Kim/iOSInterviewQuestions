@@ -1,14 +1,13 @@
-# Programmers
-> 프로그래머스 문제 풀이 저장소입니다.
-
-![GitHub top language](https://img.shields.io/github/languages/top/Hyeon-Jun-Kim/Programmers.svg?color=darkgreen&logo=swift)  ![GitHub last commit](https://img.shields.io/github/last-commit/Hyeon-Jun-Kim/Programmers.svg?color=cc33ff) 
-
-![background](./background.png)
-
-
+# iOS Interview Questions
+> 기술 면접을 대비하여 등장할 수 있는 질문에 대한 답을 정리하여 업데이트 중입니다. 
 
 ## Contents
 
-* [Level 1](https://github.com/Hyeon-Jun-Kim/Programmers/tree/main/Level%201)
-* [Level 2](https://github.com/Hyeon-Jun-Kim/Programmers/tree/main/Level%202)
-* [Level 3](https://github.com/Hyeon-Jun-Kim/Programmers/tree/main/Level%203)
+* [iOS](https://github.com/Hyeon-Jun-Kim/iOSInterviewQuestions/tree/main/iOS)
+* [Autolayout](https://github.com/Hyeon-Jun-Kim/iOSInterviewQuestions/tree/main/AutoLayout)
+* [Swift](https://github.com/Hyeon-Jun-Kim/iOSInterviewQuestions/tree/main/Swift)
+* [ARC](https://github.com/Hyeon-Jun-Kim/Programmers/tree/main/Level%203)
+* [Functional Programming](https://github.com/Hyeon-Jun-Kim/Programmers/tree/main/Level%203)
+* [Architecture](https://github.com/Hyeon-Jun-Kim/Programmers/tree/main/Level%203)
+* [SwiftUI](https://github.com/Hyeon-Jun-Kim/Programmers/tree/main/Level%203)
+* [Combine](https://github.com/Hyeon-Jun-Kim/Programmers/tree/main/Level%203)
