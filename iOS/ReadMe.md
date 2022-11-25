@@ -217,3 +217,33 @@
     * draw 메소드를 시스템이 호출하게끔 유도함
     * 다음 드로잉 사이클이 오면 그 때 쌓여있는 그려야할 컨텐츠들을 동시에 적용
 ####
+> NSCache와 딕셔너리로 캐시를 구성했을때의 차이를 설명하시오.
+- 딕셔너리
+    * 메모리가 부족하면 값을 삭제하는 코드를 작성
+- 캐시
+    * Thread-safe
+    * 메모리가 자동으로 관리됨
+    * 데이터를 쓸때마다 lock을 해줄 필요가 없음
+####
+> URLSession에 대해서 설명하시오
+- 앱과 서버 간 데이터를 주고받기 위해 사용하는 Apple의 기본 API
+####
+> prepareForReuse에 대해서 설명하시오.
+- tableView의 cell을 재사용하기 위해 셀 속성을 reset하는 함수
+- dequeueReusableCell 메서드에서 객체가 반환되기 직전에 호출됨
+####
+> ViewController의 생명주기를 설명하시오.
+- `init` : ViewController 객체가 생성됩니다.
+- `loadView` : View를 메모리에 로드합니다.
+- `viewDidLoad` : View의 Controller가 메모리에 로드된 뒤 호출됩니다.
+- `viewWillAppear` : View가 표시되기 직전에 호출됩니다.
+- `viewDidAppear` : View가 표시된 후 호출됩니다.
+- `viewWillDisappear` : View가 사라지기 직전 호출됩니다.
+- `viewDidDisappear` : View가 사라지기 직후 호출됩니다.
+- `viewDidUnload` : View가 메모리에서 해제된 뒤 호출됩니다.
+####
+> TableView와 CollectionView의 차이점을 설명하시오.
+- TableView
+    * 하나의 열에 여러 행의 cell을 표현하는 방식이기때문에, cell의 모양은 항상 row에 맞춰서 디자인 해야함
+- CollectionView
+    * 행과 열을 모두 만들 수 있기 때문에 cell의 모양을 자유롭게 디자인이 가능함
