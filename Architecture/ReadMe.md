@@ -25,6 +25,7 @@
     - View로부터 사용자의 action을 받아 Model에게 어떤 작업을 해야하는지 알려주거나 Model의 데이터 변화를 View에게 전달하여 View를 어떻게 업데이트할지 알려줌
     - Model, View에게 직접 지시 가능
 ####
+
 > MVVM 아키텍쳐를 설명하시오.
 - 작성하는 코드를 M(Model), VM(ViewModel), V(View)의 레이어로 나누어 작성하는 것을 의미
 - UI를 담당하는 View 가 직접 데이어를 제어하지 않고 View Model을 통해 CRUD 작업을 처리함
@@ -32,28 +33,20 @@
 - ViewModel은 Model의 데이터를 제어하여 View에게 데이터를 넘겨주고 View는 해당 데이터를 화면에 뿌려주는 역할 수행
 - ViewModel은 Model을 가지고 있으며 View가 ViewModel을 소유함
 
-
 - [ 장점 ]
-
-- View와 Model이 서로 전혀 알지 못하기에 독립성을 유지할 수 있음
-- 독립성을 유지하기 때문에 효율적인 유닛테스트가 가능함
-    - ViewModel에는 UIKit 관련 코드가 없고 Controller와의 의존성도 없기 때문에 유닛 테스트를 하기 좋음
-- View와 ViewModel을 바인딩하기 때문에 코드의 양이 줄어듬
-- View와 ViewModel 의 관계는 N:1 관계임
+    * View와 Model이 서로 전혀 알지 못하기에 독립성을 유지할 수 있음
+    * 독립성을 유지하기 때문에 효율적인 유닛테스트가 가능함
+    * ViewModel에는 UIKit 관련 코드가 없고 Controller와의 의존성도 없기 때문에 유닛 테스트를 하기 좋음
+    * View와 ViewModel을 바인딩하기 때문에 코드의 양이 줄어듬
+    * View와 ViewModel 의 관계는 N:1 관계임
 
 - [ 단점 ]
-
-- 간단한 UI에서 오히려 ViewModel을 설계하는 어려움이 있을 수 있음
-- 데이터 바인딩이 필수적으로 요구됨
-- 복잡해질수록 Controller처럼 ViewModel이 빠르게 비대해짐
-- 표준화된 틀이 존재하지 않아 사람마다 이해가 다름
+    * 간단한 UI에서 오히려 ViewModel을 설계하는 어려움이 있을 수 있음
+    * 데이터 바인딩이 필수적으로 요구됨
+    * 복잡해질수록 Controller처럼 ViewModel이 빠르게 비대해짐
+    * 표준화된 틀이 존재하지 않아 사람마다 이해가 다름
 
 - 데이터 바인딩 
-
-- Model과 UI 요소간의 싱크를 맞춰주는 것
-- View와 로직이 분리되어 있어도 한 쪽이 바뀌면 다른 쪽도 업데이트가 이루어져 데이터의 일관성을 유지할 수 있음
-- 방법
-    * KVO
-    * Delegation
-    * Functional Reactive Programming
-    * Property Observer
+    * Model과 UI 요소간의 싱크를 맞춰주는 것
+    * View와 로직이 분리되어 있어도 한 쪽이 바뀌면 다른 쪽도 업데이트가 이루어져 데이터의 일관성을 유지할 수 있음
+    * 방법 : KVO, Delegation, Functional Reactive Programming, Property Observer
